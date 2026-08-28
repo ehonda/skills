@@ -5,6 +5,10 @@ description: Continue plan-mode planning while running in auto-accept mode, as a
 
 # Plan Mode Workaround
 
+> **Claude Code only.** Plan mode, auto-accept mode and `~/.claude/plans/` are Claude Code
+> features, so this skill has nothing to do in an agent that lacks them. It is published for
+> completeness, not because it is portable.
+
 ## Why this skill exists
 
 Plan mode sometimes misclassifies read-only planning actions and forces manual approval for each

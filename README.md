@@ -19,9 +19,9 @@ npx skills add ehonda/skills -g -y --skill grilling   # just one
 
 | Skill | What it does |
 |---|---|
-| [handoff](./skills/handoff) | Compacts a conversation into an identified document under `~/.claude/handoffs/`, so a later session can pick the work up. |
+| [handoff](./skills/handoff) | Compacts a conversation into an identified document under `~/.agents/handoffs/`, so a later session can pick the work up. |
 | [handoff-resume](./skills/handoff-resume) | Finds one of those by identifier, topic or recency, and continues from it. |
-| [plan-mode-workaround](./skills/plan-mode-workaround) | Keeps planning after you have had to leave plan mode, then hands back to it. |
+| [plan-mode-workaround](./skills/plan-mode-workaround) | Keeps planning after you have had to leave plan mode, then hands back to it. Claude Code only. |
 
 ### Vendored from [mattpocock/skills](https://github.com/mattpocock/skills)
 

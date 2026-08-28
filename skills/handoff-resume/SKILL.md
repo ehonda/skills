@@ -1,23 +1,23 @@
 ---
 name: handoff-resume
-description: Pick up work from a handoff document in ~/.claude/handoffs/ — by identifier, by topic, or the most recent one. Invoke it only when the user asks to resume a handoff; never reach for it on your own.
+description: Pick up work from a handoff document in ~/.agents/handoffs/ — by identifier, by topic, or the most recent one. Invoke it only when the user asks to resume a handoff; never reach for it on your own.
 argument-hint: "[handoff id or topic — omit for the most recent]"
 ---
 
 # Handoff Resume
 
 Find the handoff document the user means, verify it still describes reality, and get to
-work on it. Companion to `/handoff` (see `~/.claude/skills/handoff/SKILL.md` for how these
+work on it. Companion to `/handoff` (see the `handoff` skill's own `SKILL.md` for how these
 documents are written).
 
 ## Step 1 — Resolve which handoff
 
-Handoffs live in `~/.claude/handoffs/` (or `$CLAUDE_HANDOFF_DIR`). Use the bundled lookup
+Handoffs live in `~/.agents/handoffs/` (or `$HANDOFF_DIR`). Use the bundled lookup
 script rather than reading the directory yourself — it parses each document's frontmatter
 and returns tab-separated `ID · DATE · STATUS · TITLE · PATH · SUMMARY`:
 
 ```bash
-HI=~/.claude/skills/handoff/scripts/handoff-index.sh
+HI=<the handoff skill's directory>/scripts/handoff-index.sh
 
 "$HI" --find "<argument>"   # user named something — id, partial id, or topic
 "$HI" --latest              # user said nothing

@@ -1,6 +1,6 @@
 ---
 name: handoff
-description: Compact the current conversation into an identified handoff document under ~/.claude/handoffs/ so a later session can pick the work up. Invoke it only when the user asks to hand off; never reach for it on your own.
+description: Compact the current conversation into an identified handoff document under ~/.agents/handoffs/ so a later session can pick the work up. Invoke it only when the user asks to hand off; never reach for it on your own.
 argument-hint: "[what the next session will focus on]"
 ---
 
@@ -13,7 +13,10 @@ back here without the user having to remember a file path.
 
 ## Where handoffs live
 
-`~/.claude/handoffs/<id>.md`, overridable with `$CLAUDE_HANDOFF_DIR`.
+`~/.agents/handoffs/<id>.md`, overridable with `$HANDOFF_DIR`.
+
+The directory is deliberately agent-neutral: a handoff is about the user's work, and the
+next session that picks it up may not be running the agent that wrote it.
 
 Outside any workspace on purpose: a handoff is about the user's work, not part of it,
 so it shouldn't turn up in `git status` or need a `.gitignore` entry. And unlike the
@@ -22,10 +25,10 @@ worse than no handoff, because the user was counting on it.
 
 ## The identifier
 
-`YYYY-MM-DD-<topic-slug>` — e.g. `2026-08-11-cosmos-blockers`.
+`YYYY-MM-DD-<topic-slug>` — e.g. `2026-08-11-payment-retry-storm`.
 
 Two properties matter. It sorts chronologically, and the user can guess it. Weeks later
-they will type `/handoff-resume cosmos-blockers` from memory of what they were doing,
+they will type `/handoff-resume payment-retry-storm` from memory of what they were doing,
 not from a code they wrote down. So the slug must name **the work**: two to four kebab
 words drawn from the ticket key, repo, feature, or bug at hand. `auth-token-refresh`,
 `checkout-flow-rewrite`, `handoff-skill`. Never generic filler — `session`, `work`, `task`,
@@ -68,7 +71,7 @@ not the design discussion.
 **4. Refresh the index:**
 
 ```bash
-~/.claude/skills/handoff/scripts/handoff-index.sh
+<this skill's directory>/scripts/handoff-index.sh
 ```
 
 It rebuilds `INDEX.md` from the documents' frontmatter and prints them all.
@@ -76,10 +79,10 @@ It rebuilds `INDEX.md` from the documents' frontmatter and prints them all.
 **5. Report back** with the ID, the path, and the literal line to type next time:
 
 ```
-Handoff written: 2026-08-11-cosmos-blockers
-  ~/.claude/handoffs/2026-08-11-cosmos-blockers.md
+Handoff written: 2026-08-11-payment-retry-storm
+  ~/.agents/handoffs/2026-08-11-payment-retry-storm.md
 
-In a new session:  /handoff-resume cosmos-blockers
+In a new session:  /handoff-resume payment-retry-storm
 ```
 
 ## What makes one of these good

@@ -14,7 +14,7 @@
 #   handoff-index.sh --latest        # print the single newest handoff
 #   handoff-index.sh --dir <path>    # override the handoff directory
 #
-# Directory defaults to $CLAUDE_HANDOFF_DIR, else ~/.claude/handoffs.
+# Directory defaults to $HANDOFF_DIR, else ~/.agents/handoffs.
 #
 # Listing output is one tab-separated record per line:
 #   ID <TAB> DATE <TAB> STATUS <TAB> TITLE <TAB> PATH <TAB> SUMMARY
@@ -22,7 +22,7 @@
 
 set -euo pipefail
 
-DIR="${CLAUDE_HANDOFF_DIR:-$HOME/.claude/handoffs}"
+DIR="${HANDOFF_DIR:-$HOME/.agents/handoffs}"
 MODE="index"
 QUERY=""
 
