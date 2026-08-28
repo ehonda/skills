@@ -15,6 +15,16 @@ npx skills add ehonda/skills -g -y --skill grilling   # just one
 
 ## What's here
 
+### Mine
+
+| Skill | What it does |
+|---|---|
+| [handoff](./skills/handoff) | Compacts a conversation into an identified document under `~/.claude/handoffs/`, so a later session can pick the work up. |
+| [handoff-resume](./skills/handoff-resume) | Finds one of those by identifier, topic or recency, and continues from it. |
+| [plan-mode-workaround](./skills/plan-mode-workaround) | Keeps planning after you have had to leave plan mode, then hands back to it. |
+
+### Vendored from [mattpocock/skills](https://github.com/mattpocock/skills)
+
 | Skill | What it does |
 |---|---|
 | [grilling](./skills/grilling) | Interviews you about a plan until every branch of the design tree is resolved. |
@@ -22,8 +32,8 @@ npx skills add ehonda/skills -g -y --skill grilling   # just one
 | [grill-with-docs](./skills/grill-with-docs) | The same interview, writing the glossary and ADRs as decisions land. |
 | [domain-modeling](./skills/domain-modeling) | Builds and sharpens a project's domain model. |
 
-All four come from [mattpocock/skills](https://github.com/mattpocock/skills). Three of them are
-changed here; the changes and the reasons are in [ATTRIBUTION.md](./ATTRIBUTION.md).
+Three of those four are changed here; the changes and the reasons are in
+[ATTRIBUTION.md](./ATTRIBUTION.md).
 
 ## How this repository works
 

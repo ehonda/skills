@@ -1,0 +1,3 @@
+interface:
+  display_name: "Plan Mode Workaround"
+  short_description: "Keep planning after leaving plan mode"

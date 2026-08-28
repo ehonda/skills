@@ -27,3 +27,18 @@ To see any of these exactly, without trusting this table:
 ```bash
 git diff --no-index vendor/mattpocock/<skill> skills/<skill>
 ```
+
+## Owed a mention, but not vendored
+
+`handoff` began as a reading of Matt Pocock's
+[`handoff`](https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md)
+and kept its shape: a document written for the next agent, referencing artifacts instead of
+restating them, redacting secrets, steered by the arguments you pass. Almost none of his text
+survived. His is sixteen lines; this one is ninety-one, and the only lines the two share are the
+frontmatter fence and `name: handoff`.
+
+It is therefore listed here as an acknowledgement rather than in
+[`vendor/manifest.yaml`](./vendor/manifest.yaml), and it carries no pristine copy: a base that
+shares no wording with the shipped skill would make every diff and every merge against it
+meaningless. `handoff-resume` is wholly my own, with no upstream equivalent.
+

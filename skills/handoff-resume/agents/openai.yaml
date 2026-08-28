@@ -1,0 +1,3 @@
+interface:
+  display_name: "Handoff Resume"
+  short_description: "Pick work back up from a handoff document"
