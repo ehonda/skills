@@ -1,0 +1,39 @@
+# Provenance for every vendored skill in this layer. Own skills are not listed:
+# absence from this file is what marks a skill as this layer's own work.
+# Format: https://github.com/ehonda/skill-vendor/blob/main/docs/manifest-format.md
+skills:
+  - name: grilling
+    source: mattpocock
+    source_url: https://github.com/mattpocock/skills
+    source_path: skills/productivity/grilling
+    commit: 5b15a47f2d7150f545fbcacbfe381787fc0230dc
+    vendored_at: 2026-08-29
+    license: MIT
+    license_file: vendor/mattpocock/LICENSE
+
+  - name: grill-me
+    source: mattpocock
+    source_url: https://github.com/mattpocock/skills
+    source_path: skills/productivity/grill-me
+    commit: 5b15a47f2d7150f545fbcacbfe381787fc0230dc
+    vendored_at: 2026-08-29
+    license: MIT
+    license_file: vendor/mattpocock/LICENSE
+
+  - name: grill-with-docs
+    source: mattpocock
+    source_url: https://github.com/mattpocock/skills
+    source_path: skills/engineering/grill-with-docs
+    commit: 5b15a47f2d7150f545fbcacbfe381787fc0230dc
+    vendored_at: 2026-08-29
+    license: MIT
+    license_file: vendor/mattpocock/LICENSE
+
+  - name: domain-modeling
+    source: mattpocock
+    source_url: https://github.com/mattpocock/skills
+    source_path: skills/engineering/domain-modeling
+    commit: 5b15a47f2d7150f545fbcacbfe381787fc0230dc
+    vendored_at: 2026-08-29
+    license: MIT
+    license_file: vendor/mattpocock/LICENSE
