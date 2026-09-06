@@ -12,9 +12,13 @@ documents are written).
 
 ## Step 1 — Resolve which handoff
 
-Handoffs live in `~/.agents/handoffs/` (or `$HANDOFF_DIR`). Use the bundled lookup
-script rather than reading the directory yourself — it parses each document's frontmatter
-and returns tab-separated `ID · DATE · STATUS · TITLE · PATH · SUMMARY`:
+Handoffs live in `~/.agents/handoffs/` (or `$HANDOFF_DIR`). The lookup script belongs to
+the companion `handoff` skill, not to this skill. Find that skill's installed directory,
+then use its script rather than looking for `handoff-resume/scripts/handoff-index.sh`.
+For example, if this skill is installed at `<skills-root>/handoff-resume/SKILL.md`, the
+script is at `<skills-root>/handoff/scripts/handoff-index.sh`. Confirm that path is a file
+before running it. The script parses each document's frontmatter and returns tab-separated
+`ID · DATE · STATUS · TITLE · PATH · SUMMARY`:
 
 ```bash
 HI=<the handoff skill's directory>/scripts/handoff-index.sh
