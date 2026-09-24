@@ -13,7 +13,11 @@ Copyright (c) 2026 Matt Pocock, MIT. Their licence is kept verbatim at
 [`vendor/mattpocock/LICENSE`](./vendor/mattpocock/LICENSE) and covers the vendored skills below,
 both the pristine copies and this layer's modified versions of them.
 
-Vendored at commit [`5b15a47`](https://github.com/mattpocock/skills/tree/5b15a47f2d7150f545fbcacbfe381787fc0230dc) on 2026-08-29.
+The first four skills below were vendored at commit
+[`5b15a47`](https://github.com/mattpocock/skills/tree/5b15a47f2d7150f545fbcacbfe381787fc0230dc)
+on 2026-08-29. `to-spec` was vendored at commit
+[`c55ee46`](https://github.com/mattpocock/skills/tree/c55ee46073ed923f86ce59a5eb3b6d895095d1b7)
+on 2026-09-24.
 
 | Skill | Changed here |
 |---|---|
@@ -21,6 +25,7 @@ Vendored at commit [`5b15a47`](https://github.com/mattpocock/skills/tree/5b15a47
 | [grill-me](./skills/grill-me) | Yes. Made model-invocable (dropped `disable-model-invocation` and `allow_implicit_invocation: false`), with the restraint moved into the description instead, because a user-invoked skill cannot be reached mid-message. |
 | [grill-with-docs](./skills/grill-with-docs) | Yes. Same change as `grill-me`, for the same reason. |
 | [domain-modeling](./skills/domain-modeling) | Yes. Added a section on resolving which repository `CONTEXT.md` and `docs/adr/` belong to, because a session started above or beside a repository would write them into the wrong one. |
+| [to-spec](./skills/to-spec) | Yes. Made model-invocable in both client formats, with the restriction to user-requested specs in the description. |
 
 To see any of these exactly, without trusting this table:
 

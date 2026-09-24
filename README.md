@@ -31,8 +31,9 @@ npx skills add ehonda/skills -g -y --skill grilling   # just one
 | [grill-me](./skills/grill-me) | The grilling interview on its own. |
 | [grill-with-docs](./skills/grill-with-docs) | The same interview, writing the glossary and ADRs as decisions land. |
 | [domain-modeling](./skills/domain-modeling) | Builds and sharpens a project's domain model. |
+| [to-spec](./skills/to-spec) | Turns a conversation into a spec for the project issue tracker. |
 
-Three of those four are changed here; the changes and the reasons are in
+Four of those five are changed here; the changes and the reasons are in
 [ATTRIBUTION.md](./ATTRIBUTION.md).
 
 ## How this repository works
