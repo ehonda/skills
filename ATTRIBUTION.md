@@ -25,7 +25,7 @@ on 2026-09-24.
 | [grill-me](./skills/grill-me) | Yes. Made model-invocable (dropped `disable-model-invocation` and `allow_implicit_invocation: false`), with the restraint moved into the description instead, because a user-invoked skill cannot be reached mid-message. |
 | [grill-with-docs](./skills/grill-with-docs) | Yes. Same change as `grill-me`, for the same reason. |
 | [domain-modeling](./skills/domain-modeling) | Yes. Added a section on resolving which repository `CONTEXT.md` and `docs/adr/` belong to, because a session started above or beside a repository would write them into the wrong one. |
-| [to-spec](./skills/to-spec) | Yes. Made model-invocable in both client formats, with the restriction to user-requested specs in the description. |
+| [to-spec](./skills/to-spec) | Yes. Made model-invocable in both client formats, restricted it to user-requested specs, and removed issue tracker publishing and setup instructions. |
 
 To see any of these exactly, without trusting this table:
 

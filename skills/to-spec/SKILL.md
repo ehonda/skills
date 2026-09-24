@@ -1,11 +1,9 @@
 ---
 name: to-spec
-description: "Turn the current conversation into a spec and publish it to the project issue tracker. Invoke it only when the user asks for a spec; never reach for it on your own."
+description: "Turn the current conversation into a spec for the user to review. Invoke it only when the user asks for a spec; never reach for it on your own."
 ---
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
-
-The issue tracker and triage label vocabulary should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`.
 
 ## Process
 
@@ -15,7 +13,7 @@ The issue tracker and triage label vocabulary should have been provided to you. 
 
 Check with the user that these seams match their expectations.
 
-3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
+3. Write the spec using the template below and present it to the user for review.
 
 <spec-template>
 
