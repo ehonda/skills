@@ -22,10 +22,10 @@ on 2026-09-24.
 | Skill | Changed here |
 |---|---|
 | [grilling](./skills/grilling) | No, vendored verbatim. |
-| [grill-me](./skills/grill-me) | Yes. Made model-invocable (dropped `disable-model-invocation` and `allow_implicit_invocation: false`), with the restraint moved into the description instead, because a user-invoked skill cannot be reached mid-message. |
-| [grill-with-docs](./skills/grill-with-docs) | Yes. Same change as `grill-me`, for the same reason. |
+| [grill-me](./skills/grill-me) | Yes. Made model-invocable with the restraint in the description, then added a spec handoff after the interview instead of implementation. Requires a clear target worktree for the spec. |
+| [grill-with-docs](./skills/grill-with-docs) | Yes. Made model-invocable, added a spec handoff after the interview instead of implementation, and directs glossary and ADR changes to the designated worktree during the interview. |
 | [domain-modeling](./skills/domain-modeling) | Yes. Added a section on resolving which repository `CONTEXT.md` and `docs/adr/` belong to, because a session started above or beside a repository would write them into the wrong one. |
-| [to-spec](./skills/to-spec) | Yes. Made model-invocable in both client formats, restricted it to user-requested specs, and removed issue tracker publishing and setup instructions. |
+| [to-spec](./skills/to-spec) | Yes. Made model-invocable in both client formats, allowed specs requested by the user or a grilling variant, and removed issue tracker publishing and setup instructions. |
 
 To see any of these exactly, without trusting this table:
 
@@ -46,4 +46,3 @@ It is therefore listed here as an acknowledgement rather than in
 [`vendor/manifest.yaml`](./vendor/manifest.yaml), and it carries no pristine copy: a base that
 shares no wording with the shipped skill would make every diff and every merge against it
 meaningless. `handoff-resume` is wholly my own, with no upstream equivalent.
-

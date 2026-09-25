@@ -28,8 +28,8 @@ npx skills add ehonda/skills -g -y --skill grilling   # just one
 | Skill | What it does |
 |---|---|
 | [grilling](./skills/grilling) | Interviews you about a plan until every branch of the design tree is resolved. |
-| [grill-me](./skills/grill-me) | The grilling interview on its own. |
-| [grill-with-docs](./skills/grill-with-docs) | The same interview, writing the glossary and ADRs as decisions land. |
+| [grill-me](./skills/grill-me) | Interviews you, then writes a spec for review. |
+| [grill-with-docs](./skills/grill-with-docs) | Interviews you, writes glossary and ADR changes as decisions land, then writes a spec for review. |
 | [domain-modeling](./skills/domain-modeling) | Builds and sharpens a project's domain model. |
 | [to-spec](./skills/to-spec) | Turns a conversation into a spec for review. |
 

@@ -1,6 +1,6 @@
 ---
 name: to-spec
-description: "Turn the current conversation into a spec for the user to review. Invoke it only when the user asks for a spec; never reach for it on your own."
+description: "Turn the current conversation into a spec for the user to review. Invoke when the user asks for a spec or a grilling variant calls for one."
 ---
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
