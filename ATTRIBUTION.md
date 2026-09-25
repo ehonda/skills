@@ -21,7 +21,7 @@ on 2026-09-24.
 
 | Skill | Changed here |
 |---|---|
-| [grilling](./skills/grilling) | No, vendored verbatim. |
+| [grilling](./skills/grilling) | Yes. Requires each complete question round in one response before ending the turn. Codex was queuing questions while composing a round, which made it hard for the user to answer the batch together. The rule states the shared interaction contract without naming a client. |
 | [grill-me](./skills/grill-me) | Yes. Made model-invocable with the restraint in the description, then added a spec handoff after the interview instead of implementation. Requires a clear target worktree for the spec. |
 | [grill-with-docs](./skills/grill-with-docs) | Yes. Made model-invocable, added a spec handoff after the interview instead of implementation, and directs glossary and ADR changes to the designated worktree during the interview. |
 | [domain-modeling](./skills/domain-modeling) | Yes. Added a section on resolving which repository `CONTEXT.md` and `docs/adr/` belong to, because a session started above or beside a repository would write them into the wrong one. |
