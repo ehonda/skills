@@ -13,7 +13,7 @@ This skill takes the current conversation context and codebase understanding and
 
 Check with the user that these seams match their expectations.
 
-3. Write the spec using the template below and present it to the user for review.
+3. Write the spec using the template below and present it to the user for review. If a grilling variant wrote a grilling record beside the spec, link it near the top of the spec, so a review of the spec can check it against what the user decided.
 
 <spec-template>
 

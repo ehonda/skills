@@ -22,10 +22,10 @@ on 2026-09-24.
 | Skill | Changed here |
 |---|---|
 | [grilling](./skills/grilling) | Yes. Requires each complete question round in one response before ending the turn. Codex was queuing questions while composing a round, which made it hard for the user to answer the batch together. The rule states the shared interaction contract without naming a client. |
-| [grill-me](./skills/grill-me) | Yes. Made model-invocable with the restraint in the description, then added a spec handoff after the interview instead of implementation. Requires a clear target worktree for the spec. |
-| [grill-with-docs](./skills/grill-with-docs) | Yes. Made model-invocable, added a spec handoff after the interview instead of implementation, and directs glossary and ADR changes to the designated worktree during the interview. |
+| [grill-me](./skills/grill-me) | Yes. Made model-invocable with the restraint in the description, then added a spec handoff after the interview instead of implementation. Requires a clear target worktree for the spec, and writes a grilling record (each question, recommendation and verbatim answer) beside it, so a review can check the spec against what the user decided. |
+| [grill-with-docs](./skills/grill-with-docs) | Yes. Made model-invocable, added a spec handoff after the interview instead of implementation, and directs glossary and ADR changes to the designated worktree during the interview, and writes a grilling record beside the spec. |
 | [domain-modeling](./skills/domain-modeling) | Yes. Added a section on resolving which repository `CONTEXT.md` and `docs/adr/` belong to, because a session started above or beside a repository would write them into the wrong one. |
-| [to-spec](./skills/to-spec) | Yes. Made model-invocable in both client formats, allowed specs requested by the user or a grilling variant, and removed issue tracker publishing and setup instructions. |
+| [to-spec](./skills/to-spec) | Yes. Made model-invocable in both client formats, allowed specs requested by the user or a grilling variant, removed issue tracker publishing and setup instructions, and links a grilling record from the spec when one exists. |
 
 To see any of these exactly, without trusting this table:
 
