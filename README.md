@@ -23,6 +23,9 @@ npx skills add ehonda/skills -g -y --skill grilling   # just one
 | [handoff-resume](./skills/handoff-resume) | Finds one of those by identifier, topic or recency, and continues from it. |
 | [plan-mode-workaround](./skills/plan-mode-workaround) | Keeps planning after you have had to leave plan mode, then hands back to it. Claude Code only. |
 
+The rationale for bounded handoff preparation, including why updates remain, is in
+[Why handoff preparation is bounded](./docs/notes/bounded-handoff-preparation.md).
+
 ### Vendored from [mattpocock/skills](https://github.com/mattpocock/skills)
 
 | Skill | What it does |
