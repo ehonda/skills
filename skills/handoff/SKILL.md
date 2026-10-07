@@ -38,6 +38,25 @@ Get the date from `date +%F` rather than assuming it. If `<id>.md` already exist
 append `-2`, `-3`, … — but first consider whether you should be updating that document
 instead (see below).
 
+## Keep the checkpoint bounded
+
+A handoff records the state already established in this conversation. Use that evidence
+and link existing artifacts; do not turn writing the document into a fresh investigation.
+Read the template and, for an update, the existing document. Read other artifacts only
+when a fact needed for the next step is missing. Do not replay the session history,
+rebuild inventories, fetch live status or reconsider settled decisions just to make the
+handoff more comprehensive. If a required fact is missing, check its source narrowly or
+record it as unknown with the check the next session must make. Never invent a value.
+
+Once the next action, current state, artifact references and relevant constraints are
+clear, write the document. Check the saved document and index once for usable
+frontmatter, correct references and a concrete next step, then report back. Revise again
+only for a specific defect found in that check, not for another pass at completeness.
+
+These bounds apply to both new documents and updates, including skills that use this
+workflow as their base. Keep any additional checks and authorization decisions that a
+variant explicitly requires, without expanding them into a review of the whole workflow.
+
 ## Steps
 
 **1. Decide: new document or update an existing one?**
@@ -47,6 +66,11 @@ update that document in place — keep its `id`, refresh `date`, `status`, and t
 A single ID that tracks a thread of work across many sessions is far easier to follow
 than a chain of near-duplicate documents. Start a new one when the work has genuinely
 moved on to a different thing.
+
+For an update, replace stale state and continuation steps, keeping only context that
+still affects the next action. Do not append another chronological session summary or
+archive the whole previous document unless the user asks. Reference durable artifacts
+instead of carrying their contents forward again.
 
 **2. Collect what actually needs carrying.**
 
