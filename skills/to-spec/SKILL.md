@@ -11,9 +11,13 @@ This skill takes the current conversation context and codebase understanding and
 
 2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better - the ideal number is one.
 
-Check with the user that these seams match their expectations.
+Do not stop to check the seams in chat. Write them into Testing Decisions; where you are unsure they match the user's expectations, ask there with a question block (see step 4).
 
-3. Write the spec using the template below and present it to the user for review. If a grilling variant wrote a grilling record beside the spec, link it near the top of the spec, so a review of the spec can check it against what the user decided.
+3. Write the spec to a file using the template below. Use the path the grilling variant decided, if one did. Otherwise follow the repository's spec convention (for example `docs/specs/`), and if there is none, ask the user where to write it. Keep the same path in every round. If a grilling variant wrote a grilling record beside the spec, link it near the top of the spec, so a review of the spec can check it against what the user decided. That link is how the record is reviewed: do not open it as a separate round.
+
+4. Present the spec for review in Plannotator, as a gated annotate round on the spec file (the `plannotator` tool when you have one, otherwise the CLI; the `plannotator` skill owns the mechanics). Ask every decision the conversation left open as a `:::question` block at the place in the spec it affects, following the `plannotator` skill's rules for question blocks, so the user answers them with a click in the same round as their annotations. Do not ask them in chat.
+
+   On feedback, write each answer into the spec as a decision, drop its block, apply the annotations, and open the next round on the same path. A skipped question keeps its block. If a round is dismissed without a decision, stop and ask the user how to continue. On approval, replace each remaining question block with an entry under Further Notes that records the question as open. The spec is done when the user approves it.
 
 <spec-template>
 

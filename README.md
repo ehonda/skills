@@ -34,7 +34,7 @@ The rationale for bounded handoff preparation, including why updates remain, is 
 | [grill-me](./skills/grill-me) | Interviews you, then writes a spec for review. |
 | [grill-with-docs](./skills/grill-with-docs) | Interviews you, writes glossary and ADR changes as decisions land, then writes a spec for review. |
 | [domain-modeling](./skills/domain-modeling) | Builds and sharpens a project's domain model. |
-| [to-spec](./skills/to-spec) | Turns a conversation into a spec for review. |
+| [to-spec](./skills/to-spec) | Turns a conversation into a spec, reviewed in Plannotator rounds. |
 
 Four of those five are changed here; the changes and the reasons are in
 [ATTRIBUTION.md](./ATTRIBUTION.md).
