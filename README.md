@@ -30,7 +30,7 @@ The rationale for bounded handoff preparation, including why updates remain, is 
 
 | Skill | What it does |
 |---|---|
-| [grilling](./skills/grilling) | Interviews you about a plan until every branch of the design tree is resolved. |
+| [grilling](./skills/grilling) | Interviews you about a plan until every branch of the design tree is resolved, a round of questions at a time in [Plannotator](https://github.com/backnotprop/plannotator). |
 | [grill-me](./skills/grill-me) | Interviews you, then writes a spec for review. |
 | [grill-with-docs](./skills/grill-with-docs) | Interviews you, writes glossary and ADR changes as decisions land, then writes a spec for review. |
 | [domain-modeling](./skills/domain-modeling) | Builds and sharpens a project's domain model. |
