@@ -21,6 +21,7 @@ npx skills add ehonda/skills -g -y --skill grilling   # just one
 |---|---|
 | [handoff](./skills/handoff) | Compacts a conversation into an identified document under `~/.agents/handoffs/`, so a later session can pick the work up. |
 | [handoff-resume](./skills/handoff-resume) | Finds one of those by identifier, topic or recency, and continues from it. |
+| [elaborate-decisions](./skills/elaborate-decisions) | Expands the decisions an agent left open into a document you can decide from, settled a round of questions at a time in [Plannotator](https://github.com/backnotprop/plannotator). |
 | [plan-mode-workaround](./skills/plan-mode-workaround) | Keeps planning after you have had to leave plan mode, then hands back to it. Claude Code only. |
 
 The rationale for bounded handoff preparation, including why updates remain, is in
